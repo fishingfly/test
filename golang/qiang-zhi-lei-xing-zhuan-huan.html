@@ -1,0 +1,506 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>强制类型转换 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="for-xun-huan-zhi-die-dai-bian-liang.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    持续专注
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../docker/">
+            
+                <a href="../docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../docker/registry-jing-xiang-jia-su-qi-la-qu-gu-ge-jing-xiang.html">
+            
+                <a href="../docker/registry-jing-xiang-jia-su-qi-la-qu-gu-ge-jing-xiang.html">
+            
+                    
+                    registry镜像加速器拉取谷歌镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../docker/jian-dan-jing-xiang-jia-su.html">
+            
+                <a href="../docker/jian-dan-jing-xiang-jia-su.html">
+            
+                    
+                    简单镜像加速
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../docker/registry-la-qu-dockerhub-si-you-jing-xiang.html">
+            
+                <a href="../docker/registry-la-qu-dockerhub-si-you-jing-xiang.html">
+            
+                    
+                    registry拉取dockerhub私有镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Golang
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="qiang-zhi-lei-xing-zhuan-huan.html">
+            
+                <a href="qiang-zhi-lei-xing-zhuan-huan.html">
+            
+                    
+                    强制类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="for-xun-huan-zhi-die-dai-bian-liang.html">
+            
+                <a href="for-xun-huan-zhi-die-dai-bian-liang.html">
+            
+                    
+                    for循环之迭代变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="qie-pian-chang-du.html">
+            
+                <a href="qie-pian-chang-du.html">
+            
+                    
+                    切片长度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="map-mian-shi-ti.html">
+            
+                <a href="map-mian-shi-ti.html">
+            
+                    
+                    Map面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="zhi-zhen-fang-fa-zhi-fang-fa.html">
+            
+                <a href="zhi-zhen-fang-fa-zhi-fang-fa.html">
+            
+                    
+                    指针方法&值方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >强制类型转换</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;">&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</h1>
+<p>&#x4ECE;&#x95EE;&#x9898;&#x5F00;&#x59CB;&#xFF0C;&#x4ECA;&#x5929;&#x6211;&#x60F3;&#x5BF9;&#x4E00;&#x4E2A;struct&#x7684;&#x6570;&#x7EC4;&#x5F3A;&#x5236;&#x8F6C;&#x4E3A;[]interface{}&#xFF0C;&#x53D1;&#x73B0;&#x62A5;&#x9519;&#xFF0C;&#x62A5;&#x9519;&#x663E;&#x793A;&#xFF1A;Invalid type assertion&#x3002;&#x6240;&#x4EE5;&#x5230;&#x5E95;&#x662F;&#x548B;&#x56DE;&#x4E8B;&#x5462;&#xFF1F;&#x8D81;&#x8FD9;&#x4E2A;&#x673A;&#x4F1A;&#xFF0C;&#x6293;&#x7D27;&#x8865;&#x4E60;&#x4E0B;golang&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x6709;&#x54EA;&#x4E9B;&#x65B9;&#x5F0F;&#xFF0C;&#x4EE5;&#x53CA;&#x6709;&#x54EA;&#x4E9B;&#x65B9;&#x5F0F;&#x662F;&#x4E0D;&#x5141;&#x8BB8;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x7684;&#xFF0C;&#x8FD8;&#x6709;&#x5C31;&#x662F;&#x81EA;&#x52A8;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x53D1;&#x751F;&#x5728;&#x54EA;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x3002;</p>
+<p>golang&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x5206;&#x4E3A;&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x548C;&#x7C7B;&#x578B;&#x65AD;&#x8A00;&#xFF0C;&#x4E0B;&#x9762;&#x5C31;&#x4ECE;&#x8FD9;&#x4E24;&#x4E2A;&#x65B9;&#x9762;&#x5165;&#x624B;&#xFF1A;</p>
+<p><strong>&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</strong></p>
+<p>&#x666E;&#x901A;&#x7C7B;&#x578B;&#x53D8;&#x91CF;&#xFF08;int,float,string&#xFF09;&#x90FD;&#x662F;&#x7528;type(a&#xFF09;&#x7684;&#x5F62;&#x5F0F;&#x8FDB;&#x884C;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x4E3E;&#x5982;&#x4E0B;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-text">var a int32  = 10
+var b int64 = int64(a)
+var c float32 = 12.3
+var d float64 =float64(c)
+</code></pre>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BB2;int32&#x3001;int64&#x3001;int8&#x4E4B;&#x95F4;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x4E92;&#x76F8;&#x8F6C;&#x6362;&#xFF0C;&#x4F46;&#x662F;&#x4ECE;&#x957F;&#x5EA6;&#x5927;&#x7684;int&#x8F6C;&#x5230;&#x957F;&#x5EA6;&#x5C0F;&#x7684;Int&#x65F6;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x8003;&#x8651;&#x6EA2;&#x51FA;&#x95EE;&#x9898;&#x4E86;&#xFF0C;&#x8FD9;&#x4E2A;&#x662F;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#xFF0C;&#x770B;&#x4E0B;&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-text">    var intTest32 int32 = 2147483647
+    var intTest64 int64 = 2147483648
+    intTest32 = int32(intTest64)
+    fmt.Println(intTest32)
+    fmt.Println(intTest64)
+</code></pre>
+<p>&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-text">-2147483648
+2147483648
+</code></pre>
+<p>&#x518D;&#x770B;&#x770B;&#x4E0B;&#x9762;&#x666E;&#x901A;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x62A5;&#x9519;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-text">func main() {
+    i := 0
+    var a float32
+    a = 0.9
+    i = a //cannot use `a` (type float32) as type int assignment
+    var b float64
+    b = a//cannot use `a` (type float32) as type float64 assignment
+    var intTest int32
+    intTest = 12
+    var intTest2 int8
+    intTest2 = intTest ////cannot use `intTest` (type int32) as type int8 assignment
+}
+</code></pre>
+<p>&#x5F97;&#x51FA;&#x6765;&#x7684;&#x7ED3;&#x8BBA;&#x662F;&#xFF1A;&#x666E;&#x901A;&#x7C7B;&#x578B;&#x65E0;&#x6CD5;&#x81EA;&#x52A8;&#x8FDB;&#x884C;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x5C31;&#x7B97;&#x662F;Int8&#x5230;int32&#x90FD;&#x4E0D;&#x80FD;&#x81EA;&#x52A8;&#x8F6C;&#x6362;&#x3002;</p>
+<p>&#x987A;&#x4FBF;&#x770B;&#x4E0B;int,int8,int32,int64&#x7684;&#x533A;&#x522B;&#xFF0C;&#x53C2;&#x89C1;<a href="https://golang.google.cn/ref/spec#Numeric_types" target="_blank">https://golang.google.cn/ref/spec#Numeric_types</a>&#x3002;</p>
+<pre><code class="lang-text">uint8       the set of all unsigned  8-bit integers (0 to 255)
+uint16      the set of all unsigned 16-bit integers (0 to 65535)
+uint32      the set of all unsigned 32-bit integers (0 to 4294967295)
+uint64      the set of all unsigned 64-bit integers (0 to 18446744073709551615)
+&#x200B;
+int8        the set of all signed  8-bit integers (-128 to 127)
+int16       the set of all signed 16-bit integers (-32768 to 32767)
+int32       the set of all signed 32-bit integers (-2147483648 to 2147483647)
+int64       the set of all signed 64-bit integers (-9223372036854775808 to 9223372036854775807)
+</code></pre>
+<p>&#x6BD4;&#x5982;int8&#x662F;8&#x4F4D;bit&#x7EC4;&#x6210;&#x7684;&#xFF0C;&#x8303;&#x56F4;&#x5728;-128&#x5230;127&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;unsafe.sizeof&#x51FD;&#x6570;&#x67E5;&#x770B;int8&#x7684;&#x5927;&#x5C0F;&#x3002;</p>
+<pre><code class="lang-text">    var i1 int = 1
+    var i2 int8 = 2
+    var i3 int16 = 3
+    var i4 int32 = 4
+    var i5 int64 = 5
+    fmt.Println(unsafe.Sizeof(i1))
+    fmt.Println(unsafe.Sizeof(i2))
+    fmt.Println(unsafe.Sizeof(i3))
+    fmt.Println(unsafe.Sizeof(i4))
+</code></pre>
+<p>&#x7ED3;&#x679C;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-text">8
+1
+2
+4
+8
+</code></pre>
+<p>&#x770B;&#x4E0B;unsafe.Sizeof&#x7684;&#x6CE8;&#x91CA;&#xFF1A;</p>
+<pre><code class="lang-text">// Sizeof takes an expression x of any type and returns the size in bytes sizeof&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4EE5;&#x6BD4;&#x7279;&#x4E3A;&#x5355;&#x4F4D;&#x7684;&#x5927;&#x5C0F;
+// of a hypothetical variable v as if v was declared via var v = x.
+// The size does not include any memory possibly referenced by x.
+// For instance, if x is a slice, Sizeof returns the size of the slice
+// descriptor, not the size of the memory referenced by the slice.
+// The return value of Sizeof is a Go constant.
+func Sizeof(x ArbitraryType) uintptr
+</code></pre>
+<p>&#x6240;&#x4EE5;Int8&#x3001;int32&#x3001;int64&#x4E4B;&#x95F4;&#x53EA;&#x662F;&#x7528;&#x6765;&#x5B58;&#x50A8;&#x7684;bit&#x4E2A;&#x6570;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x9ED8;&#x8BA4;int&#x662F;int64&#xFF0C;&#x6240;&#x4EE5;&#x5927;&#x5BB6;&#x5E73;&#x65F6;&#x8981;&#x6839;&#x636E;&#x9700;&#x8981;&#x7533;&#x8BF7;&#xFF0C;&#x522B;&#x76F4;&#x63A5;Int&#x3002;</p>
+<p>OK&#xFF0C;&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x5C31;&#x8BF4;&#x5230;&#x8FD9;&#x3002;&#x4E0B;&#x9762;&#x8BF4;&#x4E0B;&#x7C7B;&#x578B;&#x65AD;&#x8A00;&#x3002;</p>
+<h4 id="&#x7C7B;&#x578B;&#x65AD;&#x8A00;">&#x7C7B;&#x578B;&#x65AD;&#x8A00;</h4>
+<p>&#x9996;&#x5148;golang&#x6240;&#x6709;&#x7C7B;&#x578B;&#x90FD;&#x5B9E;&#x73B0;&#x4E86;interface{},&#x5C31;&#x50CF;Java&#x8BED;&#x8A00;&#x4E2D;&#x7684;Object&#x5BF9;&#x8C61;&#xFF0C;golang&#x4E2D;&#x81EA;&#x5B9A;&#x4E49;&#x7684;struct&#x90FD;&#x662F;&#x5B9E;&#x73B0;interface{}&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x822C;&#x7C7B;&#x578B;&#x90FD;&#x80FD;&#x8F6C;&#x6362;&#x4E3A;Interface{}&#x3002;&#x4F46;&#x662F;Interface{}&#x80FD;&#x76F4;&#x63A5;&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E3A;&#x666E;&#x901A;&#x7C7B;&#x578B;&#x5417;&#xFF1F;&#x6BD4;&#x5982;string&#x3002;&#x5B9E;&#x8DF5;&#x4E00;&#x4E0B;&#x5C31;&#x77E5;&#x9053;&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-text">    var strTest string = &quot;testing&quot;
+    t := interface{}(strTest)
+    fmt.Println(t)
+    fmt.Println(reflect.TypeOf(t))
+</code></pre>
+<p>&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-text">testing
+string
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x6D4B;&#x8BD5;&#x4E0B;Interface{}&#x80FD;&#x5426;&#x76F4;&#x63A5;&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E3A;&#x666E;&#x901A;&#x7C7B;&#x578B;</p>
+<pre><code class="lang-text">    var strTest string = &quot;testing&quot;
+    t := interface{}(strTest)
+    fmt.Println(string(t)) // error: cannot convert expression of type interface{} to type string
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x663E;&#x793A;interface{}&#x5F3A;&#x8F6C;string&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x660E;&#x660E;&#x77E5;&#x9053;&#x8FD9;&#x662F;string&#xFF0C;&#x4F46;&#x662F;&#x8F6C;&#x4E0D;&#x4E86;&#xFF0C;&#x548B;&#x529E;&#x5462;&#xFF1F;&#x8FD9;&#x5C31;&#x9700;&#x8981;&#x7528;&#x5230;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-text">var strTest string = &quot;testing&quot;
+    t := interface{}(strTest)
+    if newt, ok := t.(string)
+        fmt.Println(newt)
+        fmt.Println(&quot;&#x8F6C;&#x6362;&#x6210;&#x529F;&quot;)
+        fmt.Println(reflect.TypeOf(newt))
+    } else {
+        fmt.Println(&quot;&#x8F6C;&#x6362;&#x4E0D;&#x6210;&#x529F;&quot;)
+        fmt.Println(newt)
+        fmt.Println(reflect.TypeOf(newt))
+    }
+</code></pre>
+<p>&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-text">testing
+&#x8F6C;&#x6362;&#x6210;&#x529F;
+string
+</code></pre>
+<p>&#x6211;&#x89C9;&#x5F97;&#x8FD9;&#x6837;&#x7684;&#x65AD;&#x8A00;&#x8BBE;&#x8BA1;&#x662F;&#x4E3A;&#x4E86;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x52A8;&#x6001;&#x5224;&#x65AD;&#x4F20;&#x9001;&#x8FC7;&#x6765;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x8FDB;&#x884C;&#x52A8;&#x6001;&#x907F;&#x9519;&#xFF0C;&#x51CF;&#x5C11;bug&#x7684;&#x53D1;&#x751F;&#xFF0C;&#x4E5F;&#x80FD;&#x589E;&#x5F3A;&#x63A5;&#x53E3;&#x7684;&#x5BB9;&#x9519;&#x6027;&#x3002;&#x5C31;&#x7B97;&#x8F6C;&#x6362;&#x4E0D;&#x6210;&#x529F;&#xFF0C;&#x4E5F;&#x4F1A;&#x6709;&#x7ED3;&#x679C;&#x503C;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x975E;&#x5E38;&#x597D;&#x4E86;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-text">    var strTest string = &quot;testing&quot;
+    t := interface{}(strTest)
+    if newt, ok := t.(int8); ok {//&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x53D8;&#x4E86;
+        fmt.Println(newt)
+        fmt.Println(&quot;&#x8F6C;&#x6362;&#x6210;&#x529F;&quot;)
+        fmt.Println(reflect.TypeOf(newt))
+    } else {
+        fmt.Println(&quot;&#x8F6C;&#x6362;&#x4E0D;&#x6210;&#x529F;&quot;)
+        fmt.Println(newt)
+        fmt.Println(reflect.TypeOf(newt))
+    }
+</code></pre>
+<p>&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-text">&#x8F6C;&#x6362;&#x4E0D;&#x6210;&#x529F;
+0
+int8
+</code></pre>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x5C31;&#x7B97;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0D;&#x6210;&#x529F;&#xFF0C;&#x4ED6;&#x4E5F;&#x4F1A;&#x5E2E;&#x4F60;&#x628A;&#x7ED3;&#x679C;&#x503C;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x4F60;&#x8981;&#x8F6C;&#x6362;&#x7C7B;&#x578B;&#x7684;&#x96F6;&#x503C;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x8BBE;&#x8BA1;&#x975E;&#x5E38;&#x7684;&#x597D;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x5F3A;&#x8FEB;&#x81EA;&#x5DF1;&#x53BB;&#x5224;&#x65AD;Ok&#x662F;&#x5426;&#x4E3A;true,&#x53CD;&#x6B63;&#x6709;&#x96F6;&#x503C;&#x8FD4;&#x56DE;&#x3002;&#x5F53;&#x7136;&#x4E5F;&#x8981;&#x770B;&#x96F6;&#x503C;&#x662F;&#x5426;&#x662F;&#x4F60;&#x6240;&#x9700;&#x8981;&#x7684;&#x3002;</p>
+<p>&#x603B;&#x7ED3;&#x4E0B;&#xFF1A;&#x6211;&#x4E2A;&#x4EBA;&#x6BD4;&#x8F83;&#x559C;&#x6B22;&#x7C7B;&#x578B;&#x65AD;&#x8A00;&#xFF0C;&#x8BBE;&#x8BA1;&#x7684;&#x975E;&#x5E38;&#x68D2;</p>
+<p>&#x53C2;&#x8003;&#x6587;&#x7AE0;&#xFF1A;</p>
+<p><a href="https://studygolang.com/articles/21591" target="_blank">https://studygolang.com/articles/21591</a></p>
+<p><a href="https://draveness.me/golang/docs/part1-prerequisite/ch02-compile/golang-typecheck/" target="_blank">https://draveness.me/golang/docs/part1-prerequisite/ch02-compile/golang-typecheck/</a></p>
+<p><a href="https://golang.org/doc/faq#convert_slice_of_interface" target="_blank">https://golang.org/doc/faq#convert_slice_of_interface</a></p>
+<p>&#x63A8;&#x8350;&#x4EE5;&#x4E0B;golang&#x8BED;&#x8A00;&#x76F8;&#x5173;&#x7684;&#x95EE;&#x9898;&#x53EF;&#x4EE5;&#x53BB;&#x770B;&#x4E0B;&#x8FD9;&#x4E2A;&#x5730;&#x5740;&#xFF1A;<a href="https://golang.org/doc/faq" target="_blank">https://golang.org/doc/faq</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Golang">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="for-xun-huan-zhi-die-dai-bian-liang.html" class="navigation navigation-next " aria-label="Next page: for循环之迭代变量">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"强制类型转换","level":"1.3.1","depth":2,"next":{"title":"for循环之迭代变量","level":"1.3.2","depth":2,"path":"golang/for-xun-huan-zhi-die-dai-bian-liang.md","ref":"golang/for-xun-huan-zhi-die-dai-bian-liang.md","articles":[]},"previous":{"title":"Golang","level":"1.3","depth":1,"path":"golang/README.md","ref":"golang/README.md","articles":[{"title":"强制类型转换","level":"1.3.1","depth":2,"path":"golang/qiang-zhi-lei-xing-zhuan-huan.md","ref":"golang/qiang-zhi-lei-xing-zhuan-huan.md","articles":[]},{"title":"for循环之迭代变量","level":"1.3.2","depth":2,"path":"golang/for-xun-huan-zhi-die-dai-bian-liang.md","ref":"golang/for-xun-huan-zhi-die-dai-bian-liang.md","articles":[]},{"title":"切片长度","level":"1.3.3","depth":2,"path":"golang/qie-pian-chang-du.md","ref":"golang/qie-pian-chang-du.md","articles":[]},{"title":"Map面试题","level":"1.3.4","depth":2,"path":"golang/map-mian-shi-ti.md","ref":"golang/map-mian-shi-ti.md","articles":[]},{"title":"指针方法&值方法","level":"1.3.5","depth":2,"path":"golang/zhi-zhen-fang-fa-zhi-fang-fa.md","ref":"golang/zhi-zhen-fang-fa-zhi-fang-fa.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"golang/qiang-zhi-lei-xing-zhuan-huan.md","mtime":"2020-01-28T11:47:38.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-28T13:51:29.007Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

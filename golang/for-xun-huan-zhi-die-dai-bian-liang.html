@@ -1,0 +1,479 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>for循环之迭代变量 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="qie-pian-chang-du.html" />
+    
+    
+    <link rel="prev" href="qiang-zhi-lei-xing-zhuan-huan.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    持续专注
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../docker/">
+            
+                <a href="../docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../docker/registry-jing-xiang-jia-su-qi-la-qu-gu-ge-jing-xiang.html">
+            
+                <a href="../docker/registry-jing-xiang-jia-su-qi-la-qu-gu-ge-jing-xiang.html">
+            
+                    
+                    registry镜像加速器拉取谷歌镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../docker/jian-dan-jing-xiang-jia-su.html">
+            
+                <a href="../docker/jian-dan-jing-xiang-jia-su.html">
+            
+                    
+                    简单镜像加速
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../docker/registry-la-qu-dockerhub-si-you-jing-xiang.html">
+            
+                <a href="../docker/registry-la-qu-dockerhub-si-you-jing-xiang.html">
+            
+                    
+                    registry拉取dockerhub私有镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Golang
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="qiang-zhi-lei-xing-zhuan-huan.html">
+            
+                <a href="qiang-zhi-lei-xing-zhuan-huan.html">
+            
+                    
+                    强制类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="for-xun-huan-zhi-die-dai-bian-liang.html">
+            
+                <a href="for-xun-huan-zhi-die-dai-bian-liang.html">
+            
+                    
+                    for循环之迭代变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="qie-pian-chang-du.html">
+            
+                <a href="qie-pian-chang-du.html">
+            
+                    
+                    切片长度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="map-mian-shi-ti.html">
+            
+                <a href="map-mian-shi-ti.html">
+            
+                    
+                    Map面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="zhi-zhen-fang-fa-zhi-fang-fa.html">
+            
+                <a href="zhi-zhen-fang-fa-zhi-fang-fa.html">
+            
+                    
+                    指针方法&值方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >for循环之迭代变量</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="for&#x5FAA;&#x73AF;&#x4E4B;&#x8FED;&#x4EE3;&#x53D8;&#x91CF;">for&#x5FAA;&#x73AF;&#x4E4B;&#x8FED;&#x4EE3;&#x53D8;&#x91CF;</h1>
+<p>&#x9762;&#x8BD5;&#x9898;&#xFF1A;</p>
+<pre><code class="lang-text">package main
+const N = 3
+func main() {
+    m := make(map[int]*int)
+    for i := 0; i &lt; N; i++ {
+        m[i] = &amp;i //A
+    }
+    for _, v := range m {
+        print(*v)
+    }
+}
+</code></pre>
+<p>&#x81EA;&#x5DF1;&#x60F3;&#x4E00;&#x4E0B;&#x7ED3;&#x679C;&#xFF0C;&#x60F3;&#x4E00;&#x4E0B;&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x662F;&#x5565;&#xFF1F;</p>
+<p>&#x8FD9;&#x8FB9;&#x6D89;&#x53CA;&#x7684;&#x77E5;&#x8BC6;&#x70B9;&#x662F;for&#x5FAA;&#x73AF;&#x4E2D;&#x7684;&#x8FED;&#x4EE3;&#x53D8;&#x91CF;</p>
+<p>&#x5176;&#x5B9E;&#x5F88;&#x7B80;&#x5355; &#x5F15;&#x5165;&#x4E00;&#x4E2A;&#x4E34;&#x65F6;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5C06;&#x6BCF;&#x6B21;&#x7684;&#x503C;&#x5B58;&#x50A8;&#x5230;&#x8BE5;&#x53D8;&#x91CF;&#x5730;&#x5740;&#x4E0A;</p>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x5F88;&#x5947;&#x602A;&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x51FA;&#x73B0;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x7ED3;&#x679C;&#x4E0D;&#x5E94;&#x8BE5;&#x662F; <code>1, 4, 9, 16, 25</code> &#x5417;&#xFF1F;&#x5176;&#x5B9E;&#x539F;&#x56E0;&#x662F;&#x5FAA;&#x73AF;&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x89C4;&#x5219;&#x9650;&#x5236;&#x3002;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;<code>v</code> &#x5728; for &#x5FAA;&#x73AF;&#x5F15;&#x8FDB;&#x7684;&#x4E00;&#x4E2A;&#x5757;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x8FDB;&#x884C;&#x58F0;&#x660E;&#x3002;&#x5728;&#x5FAA;&#x73AF;&#x91CC;&#x521B;&#x5EFA;&#x7684;&#x6240;&#x6709;&#x51FD;&#x6570;&#x53D8;&#x91CF;<code>&#x5171;&#x4EAB;&#x76F8;&#x540C;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x8BBF;&#x95EE;&#x7684;&#x5B58;&#x50A8;&#x4F4D;&#x7F6E;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#x503C;</code>&#x3002;(&#x4F60;&#x4F1A;&#x60CA;&#x5947;&#x7684;&#x53D1;&#x73B0; <code>&amp;v</code> &#x7684;&#x5185;&#x5B58;&#x5730;&#x5740;&#x662F;&#x4E00;&#x6837;&#x7684;)</p>
+<p>&#x6A21;&#x62DF;&#x4E00;&#x4E0B;&#x5B9E;&#x9645;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5047;&#x8BBE; v &#x53D8;&#x91CF;&#x7684;&#x5730;&#x5740;&#x5728; 0x12345678 &#x4E0A;&#xFF0C; for &#x5FAA;&#x73AF;&#x5728;&#x8FED;&#x4EE3;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6240;&#x6709;&#x53D8;&#x91CF;&#x503C;&#x90FD;&#x662F;&#x5728;&#x8FD9;&#x5730;&#x5740;&#x4E0A;&#x8FED;&#x4EE3;&#x7684;&#x3002;&#x5F53;&#x6700;&#x540E;&#x8C03;&#x7528;&#x533F;&#x540D;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53D6;&#x503C;&#x4E5F;&#x662F;&#x5728;&#x8FD9;&#x5757;&#x5730;&#x5740;&#x4E0A;&#x3002;&#x6240;&#x4EE5;&#x6700;&#x540E;&#x8F93;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x90FD;&#x662F;&#x8FED;&#x4EE3;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x503C;&#x3002;&#x81F3;&#x5C11;&#x5728; Go &#x8BED;&#x8A00;&#x4E2D;&#x662F;&#x4E0D;&#x7528;&#x8D28;&#x7591;&#x7684;&#x3002;&#x8FD9;&#x91CC;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x9677;&#x9631;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x6E05;&#x695A;&#x7684;&#x8BDD;&#xFF0C;&#x80AF;&#x5B9A;&#x4F1A;&#x9047;&#x5230;&#x5751;&#x3002;&#x90A3;&#x4E2A;&#x8BE5;&#x5982;&#x4F55;&#x4FEE;&#x6539;&#x5462;&#xFF1F;</p>
+<pre><code class="lang-text">for i, v := range
+</code></pre>
+<ul>
+<li><code>i</code>,<code>v</code>&#x90FD;&#x662F;&#x53EA;&#x521B;&#x5EFA;&#x4E00;&#x6B21;&#xFF0C;&#x7136;&#x540E;&#x5FAA;&#x73AF;&#x4E2D;&#x8D4B;&#x503C;&#x3002;</li>
+<li>&#x5FAA;&#x73AF;&#x7684; Map&#xFF0C;<code>golang</code>&#x4E3A;&#x907F;&#x514D;&#x5F00;&#x53D1;&#x8005;&#x5FAA;&#x73AF;&#x65F6;&#x95EE;&#x9898;&#xFF0C;&#x6240;&#x4EE5;&#x7279;&#x610F;&#x5728;&#x5FAA;&#x73AF;&#x4E2D;&#x6253;&#x4E71;&#x6392;&#x5E8F;</li>
+<li>&#x5FAA;&#x73AF;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x662F;&#x5728;&#x5F00;&#x59CB;&#x524D;&#x7684;&#x955C;&#x50CF;&#xFF0C;&#x5FAA;&#x73AF;&#x4E2D;&#x6DFB;&#x52A0;&#x6216;&#x79FB;&#x9664;&#x5143;&#x7D20;&#x4E0D;&#x6539;&#x53D8;&#x5176;&#x5FAA;&#x73AF;&#x6B21;&#x6570;&#x3002;</li>
+<li>&#x5FAA;&#x73AF;&#x7684; Map&#xFF0C;&#x7531;&#x4E8E;&#x5176;&#x968F;&#x673A;&#x7279;&#x6027;&#xFF0C;&#x5FAA;&#x73AF;&#x4E2D;&#x6DFB;&#x52A0;&#x6216;&#x79FB;&#x9664;&#x5143;&#x7D20;&#x4E0D;&#x80FD;&#x786E;&#x5B9A;&#x662F;&#x5426;&#x6539;&#x53D8;&#x5FAA;&#x73AF;&#x6B21;&#x6570;</li>
+</ul>
+<pre><code class="lang-text">package main
+const N = 3
+func main() {
+    m := make(map[int]*int)
+    for i := 0; i &lt; N; i++ {
+        j := int(i)
+        m[i] = &amp;j
+    }
+    for _, v := range m {
+        print(*v)
+    }
+}
+</code></pre>
+<p>question2:&#x4E0B;&#x9762;&#x7A0B;&#x5E8F;&#x7684;&#x6253;&#x5370;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;</p>
+<pre><code class="lang-text">package main
+import (
+    &quot;fmt&quot;
+    &quot;time&quot;
+)
+type field struct {
+    name string
+}
+func (p *field) print() {
+    fmt.Println(p.name)
+}
+func main() {
+    data := []field{
+    {&quot;one&quot;}, {&quot;two&quot;}, {&quot;three&quot;}
+    }
+    for _, v := range data {
+        go v.print()
+    }
+    time.Sleep(3 * time.Second)
+}
+</code></pre>
+<p>&#x6253;&#x5370;&#x7ED3;&#x679C;&#xFF1A;</p>
+<p>three three three</p>
+<p>&#x90A3;&#x518D;&#x770B;&#x770B;&#x4E0B;&#x9762;&#x7A0B;&#x5E8F;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-text">package main
+import (
+    &quot;fmt&quot;
+    &quot;time&quot;
+)
+type field struct {
+    name string
+}
+func (p *field) print() {
+    fmt.Println(p.name)
+}
+func main() {
+    //data := []field{
+    //{&quot;one&quot;}, {&quot;two&quot;}, {&quot;three&quot;}
+    //}
+    //for _, v := range data {
+    //  go v.print()
+    //}
+    //time.Sleep(3 * time.Second)
+    data := []*field{
+    {&quot;one&quot;}, {&quot;two&quot;}, {&quot;three&quot;}
+    }
+    for _, v := range data {
+        go v.print()
+    }
+    time.Sleep(3 * time.Second)
+    //goroutines print: one, two, three
+}
+</code></pre>
+<p>&#x7ED3;&#x679C;&#xFF1A;</p>
+<p>one two three</p>
+<p>&#x4EE5;&#x4E0B;&#x6458;&#x81EA;&#xFF1A;<a href="https://studygolang.com/topics/3775" target="_blank">https://studygolang.com/topics/3775</a> &#x4E2D;&#x4EE5;&#x4E3A;&#x7F51;&#x53CB;&#x7684;&#x8BC4;&#x8BBA;&#xFF0C;&#x8BB2;&#x7684;&#x5F88;&#x4E0D;&#x9519;</p>
+<p><em>&#x867D;&#x7136;&#x697C;&#x4E3B;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x539F;&#x56E0;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x539F;&#x56E0;&#x6700;&#x597D;&#x8FD8;&#x662F;&#x6CE8;&#x660E;&#x4E0B;&#xFF0C;&#x65B9;&#x4FBF;&#x89E3;&#x60D1;&#x4ED6;&#x4EBA;&#x3002;</em></p>
+<p><em>&#x5148;&#x58F0;&#x660E;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x8D77;&#x89C1;&#xFF0C;&#x6211;&#x628A;&#x6307;&#x9488;&#x79F0;&#x4E3A;&#x5730;&#x5740;&#xFF0C;&#x8FD9;&#x6837;&#x4F1A;&#x66F4;&#x597D;&#x7406;&#x89E3;&#x4E00;&#x4E9B;&#x3002;</em></p>
+<p><em>&#x5148;&#x8BF4;&#x4E0B;&#x6848;&#x4F8B;&#x4E00; &#x95EE;&#x9898;&#x7684;&#x5173;&#x952E;&#x5728;&#x4E8E;print&#x65B9;&#x6CD5;&#x7684;&#x58F0;&#x660E;&#xFF0C;&#x73B0;&#x5728;&#x662F;func (p field) print()&#x3002; 1&#x3001;&#x9996;&#x5148;&#x660E;&#x786E;&#x4E00;&#x70B9;&#xFF0C;&#x5728;for&#x5FAA;&#x73AF;&#x7ED3;&#x675F;&#x4E4B;&#x540E;&#xFF0C;&#x590D;&#x7528;&#x53D8;&#x91CF;v&#x7684;&#x503C;&#x5176;&#x5B9E;&#x5DF2;&#x7ECF;&#x53D8;&#x6210;&#x4E86;three&#x3002; 2&#x3001;&#x5176;&#x6B21;&#x6CE8;&#x610F;print&#x65B9;&#x6CD5;&#x7684;&#x58F0;&#x660E;&#xFF0C;func (p field) print()&#xFF0C;&#x7EC6;&#x5FC3;&#x7684;&#x540C;&#x5B66;&#x53D1;&#x73B0;&#x4E86;&#xFF0C;print&#x65B9;&#x6CD5;&#x7684;&#x63A5;&#x6536;&#x8005;&#x5176;&#x5B9E;&#x662F;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#x3002; 3&#x3001;for&#x5FAA;&#x73AF;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F20;&#x9012;&#x7ED9;print&#x7684;&#x65B9;&#x6CD5;&#x63A5;&#x6536;&#x8005;&#x662F;&#x5BF9;&#x8C61;v,&#x4F46;&#x662F;&#x65B9;&#x6CD5;&#x63A5;&#x6536;&#x8005;&#x5374;&#x8981;&#x6C42;&#x662F;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#xFF0C;&#x8FD9;&#x65F6;&#xFF0C;golang&#x81EA;&#x52A8;&#x505A;&#x4E86;&#x8F6C;&#x6362;&#xFF0C;&#x628A;&#x5BF9;&#x8C61;&#x7684;&#x5730;&#x5740;&#x4F20;&#x9012;&#x8FC7;&#x53BB;&#x4E86;&#xFF0C;&#x6CE8;&#x610F;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x5730;&#x5740;&#x4F20;&#x9012;&#x8FC7;&#x53BB;&#x4E86;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x503C;&#xFF0C;&#x53C2;&#x8003;&#x7B2C;&#x4E00;&#x6761;&#xFF0C;&#x56E0;&#x4E3A;v&#x662F;&#x590D;&#x7528;&#x53D8;&#x91CF;&#xFF0C;v&#x7684;&#x5730;&#x5740;&#x662F;&#x4E0D;&#x4F1A;&#x53D8;&#xFF0C;&#x4F46;v&#x7684;&#x503C;&#x4F1A;&#x53D8;&#xFF0C;&#x7531;one&#x53D8;&#x6210;two&#xFF0C;&#x7531;two&#x53D8;&#x6210;three&#xFF0C;&#x65E2;&#x7136;&#x6211;&#x4EEC;3&#x6B21;&#x4F20;&#x9012;&#x7684;&#x90FD;&#x662F;v&#x7684;&#x5730;&#x5740;&#xFF0C;&#x6240;&#x4EE5;&#x6253;&#x5370;&#x51FA;&#x6765;&#x7684;&#x81EA;&#x7136;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x503C;</em></p>
+<p>*&#x518D;&#x8BF4;&#x4E0B;&#x6848;&#x4F8B;&#x4E8C; &#x6848;&#x4F8B;&#x4E8C;&#x4E2D;&#xFF0C;print&#x65B9;&#x6CD5;&#x7684;&#x58F0;&#x660E;&#x4F9D;&#x7136;&#x662F;func (p <em>field) print(),&#x4F46;&#x662F;&#x6253;&#x5370;&#x51FA;&#x6765;&#x7684;&#x5374;&#x662F;one,two,three,&#x8FD9;&#x662F;&#x4E3A;&#x4F55;&#x5462;&#xFF1F; &#x539F;&#x56E0;&#x5C31;&#x662F;&#x5728;&#x4E8E;&#x8FD9;&#x6B21;&#x6211;&#x4EEC;&#x4F20;&#x9012;&#x4E0D;&#x518D;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5730;&#x5740;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x4F20;&#x9012;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x548C;&#x65B9;&#x6CD5;&#x58F0;&#x660E;&#x7684;&#x7C7B;&#x578B;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;golang&#x4E0D;&#x4F1A;&#x5BF9;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x8F6C;&#x6362;&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x62F7;&#x8D1D;&#x4E86;&#x4F20;&#x9012;&#x8FC7;&#x6765;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x65E2;&#x7136;&#x6BCF;&#x6B21;&#x4F20;&#x9012;&#x8FC7;&#x6765;&#x7684;&#x5730;&#x5740;&#x90FD;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x6253;&#x5370;&#x51FA;&#x6765;&#x7684;&#x503C;&#x81EA;&#x7136;&#x4E0D;&#x540C;</em></p>
+<p>*&#x5982;&#x4F55;&#x8BA9;&#x6848;&#x4F8B;&#x4E00;&#x4E5F;&#x8F93;&#x51FA;one,two,three&#x5462;&#xFF1F; &#x4FEE;&#x6539;print&#x65B9;&#x6CD5;&#x7684;&#x58F0;&#x660E;&#xFF0C;func (p <em>field) print()&#x6539;&#x6210;func (p field) print()&#xFF0C;&#x6211;&#x4EEC;&#x628A;&#x65B9;&#x6CD5;&#x63A5;&#x6536;&#x8005;&#x6539;&#x6210;&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x5730;&#x5740;&#xFF0C;,&#x56E0;&#x4E3A;for&#x4E2D;&#xFF0C;&#x6BCF;&#x6B21;&#x4F20;&#x9012;&#x8FC7;&#x53BB;&#x7684;&#x503C;&#x90FD;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x6253;&#x5370;&#x51FA;&#x6765;&#x7684;&#x81EA;&#x7136;&#x5C31;&#x662F;one,two,three&#x3002;&#x4E0D;&#x5EFA;&#x8BAE;&#x8FD9;&#x4E48;&#x505A;&#xFF0C;&#x539F;&#x56E0;&#x5728;&#x4E0B;&#x9762;&#x4F1A;&#x8BF4;&#x660E;&#x3002;</em></p>
+<p><em>&#x8BF4;&#x4E86;&#x90A3;&#x4E48;&#x591A;&#xFF0C;&#x603B;&#x7ED3;&#x4E00;&#x53E5;&#x8BDD;&#xFF0C;&#x6CE8;&#x610F;&#x4F20;&#x9012;&#x7ED9;&#x65B9;&#x6CD5;&#x7684;&#x63A5;&#x6536;&#x8005;&#x7C7B;&#x578B;&#x662F;&#x4E0D;&#x662F;&#x8BE5;&#x65B9;&#x6CD5;&#x58F0;&#x660E;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x8BDD;&#xFF0C;&#x81EA;&#x7136;&#x4F1A;&#x51FA;&#x73B0;&#x4E00;&#x4E9B;&#x610F;&#x60F3;&#x4E0D;&#x5230;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x6700;&#x597D;&#x5728;&#x7F16;&#x7801;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6CE8;&#x610F;&#x8FD9;&#x70B9;&#x3002;</em></p>
+<p><em>&#x8FD8;&#x6709;&#x4E00;&#x70B9;&#x8BF4;&#x660E;&#x4E0B;&#x4E0A;&#x9762;&#x4E3A;&#x4EC0;&#x4E48;&#x8BF4;&#x4E0D;&#x5EFA;&#x8BAE;&#x4FEE;&#x6539;print&#x65B9;&#x6CD5;&#x7684;&#x58F0;&#x660E;&#xFF0C;&#x6848;&#x4F8B;&#x4E00;&#x4E2D;&#xFF0C;for&#x5FAA;&#x73AF;&#x5176;&#x5B9E;&#x662F;&#x5728;&#x62F7;&#x8D1D;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7ED9;v&#xFF0C;&#x8FD9;&#x6837;&#x5185;&#x5B58;&#x662F;&#x9ED8;&#x9ED8;&#x7684;&#x4E00;&#x6B21;&#x6B21;&#x7684;&#x65E0;&#x60C5;&#x6D88;&#x8017;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x6700;&#x597D;for&#x5FAA;&#x73AF;&#x904D;&#x5386;&#x662F;&#x6307;&#x9488;&#x6570;&#x7EC4;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#x3002;&#x6700;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x662F;data&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#x6570;&#x7EC4;&#xFF0C;&#x8FD9;&#x6837;&#x548C;&#x65B9;&#x6CD5;&#x58F0;&#x660E;&#x4E00;&#x81F4;&#x3002;&#x800C;&#x4E14;for&#x5FAA;&#x73AF;&#x4E2D;&#x4E5F;&#x4E0D;&#x4F1A;&#x4EA7;&#x751F;&#x5927;&#x91CF;&#x7684;&#x9690;&#x5F62;&#x62F7;&#x8D1D;&#x884C;&#x4E3A;&#x3002;</em></p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x6211;&#x5728;&#x770B;Golang&#x76F8;&#x5173;&#x8D44;&#x6599;&#x662F;&#x4E5F;&#x770B;&#x5230;&#x5173;&#x4E8E;&#x503C;&#x65B9;&#x6CD5;&#x4E2A;&#x6307;&#x9488;&#x65B9;&#x6CD5;&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x5F53;&#x7136;&#x6211;&#x535A;&#x5BA2;&#x91CC;&#x4E5F;&#x6709;&#x8BB2;&#x5230;&#x8FD9;&#x65B9;&#x9762;&#x7684;&#x535A;&#x6587;&#xFF08;<a href="https://fishingfly.github.io/2020/01/05/%E9%9D%A2%E8%AF%95%E9%A2%98_%E6%8C%87%E9%92%88%E6%96%B9%E6%B3%95%E5%92%8C%E5%80%BC%E6%96%B9%E6%B3%95.html" target="_blank">https://fishingfly.github.io/2020/01/05/%E9%9D%A2%E8%AF%95%E9%A2%98_%E6%8C%87%E9%92%88%E6%96%B9%E6%B3%95%E5%92%8C%E5%80%BC%E6%96%B9%E6%B3%95.html</a>&#xFF09;&#xFF0C;&#x8FD9;&#x8FB9;&#x9700;&#x8981;&#x8BB2;&#x4E00;&#x4E0B;&#x503C;&#x65B9;&#x6CD5;&#x548C;&#x6307;&#x9488;&#x65B9;&#x6CD5;&#x4E4B;&#x95F4;&#x6709;&#x4EC0;&#x4E48;&#x4E0D;&#x540C;&#x70B9;&#x5462;&#xFF1F;&#x5B83;&#x4EEC;&#x7684;&#x4E0D;&#x540C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF08;&#x4EE5;&#x4E0B;&#x6458;&#x81EA;&#x6781;&#x5BA2;&#x65F6;&#x95F4;&#x300A;Golang&#x6838;&#x5FC3;36&#x8BB2;&#x300B;&#x7684;&#x5173;&#x4E8E;&#x6307;&#x9488;&#x7684;&#x6709;&#x9650;&#x64CD;&#x4F5C;&#xFF09;&#x3002;</p>
+<p>1&#x3001;&#x503C;&#x65B9;&#x6CD5;&#x7684;&#x63A5;&#x6536;&#x8005;&#x662F;&#x8BE5;&#x65B9;&#x6CD5;&#x6240;&#x5C5E;&#x7684;&#x90A3;&#x4E2A;&#x7C7B;&#x578B;&#x503C;&#x7684;&#x4E00;&#x4E2A;&#x526F;&#x672C;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x8BE5;&#x65B9;&#x6CD5;&#x5185;&#x5BF9;&#x8BE5;&#x526F;&#x672C;&#x7684;&#x4FEE;&#x6539;&#x4E00;&#x822C;&#x90FD;&#x4E0D;&#x4F1A;&#x4F53;&#x73B0;&#x5728;&#x539F;&#x503C;&#x4E0A;&#xFF0C;&#x9664;&#x975E;&#x8FD9;&#x4E2A;&#x7C7B;&#x578B;&#x672C;&#x8EAB;&#x662F;&#x67D0;&#x4E2A;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#xFF08;&#x6BD4;&#x5982;&#x5207;&#x7247;&#x6216;&#x5B57;&#x5178;&#xFF09;&#x7684;&#x522B;&#x540D;&#x7C7B;&#x578B;&#x3002;&#x800C;&#x6307;&#x9488;&#x65B9;&#x6CD5;&#x7684;&#x63A5;&#x6536;&#x8005;&#xFF0C;&#x662F;&#x8BE5;&#x65B9;&#x6CD5;&#x6240;&#x5C5E;&#x7684;&#x90A3;&#x4E2A;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x503C;&#x7684;&#x6307;&#x9488;&#x503C;&#x7684;&#x4E00;&#x4E2A;&#x526F;&#x672C;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x6837;&#x7684;&#x65B9;&#x6CD5;&#x5185;&#x5BF9;&#x8BE5;&#x526F;&#x672C;&#x6307;&#x5411;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x5374;&#x4E00;&#x5B9A;&#x4F1A;&#x4F53;&#x73B0;&#x5728;&#x539F;&#x503C;&#x4E0A;&#x3002;</p>
+<p>2&#x3001;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x65B9;&#x6CD5;&#x96C6;&#x5408;&#x4E2D;&#x4EC5;&#x4F1A;&#x5305;&#x542B;&#x5B83;&#x7684;&#x6240;&#x6709;&#x503C;&#x65B9;&#x6CD5;&#xFF0C;&#x800C;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x6307;&#x9488;&#x7C7B;&#x578B;&#x7684;&#x65B9;&#x6CD5;&#x96C6;&#x5408;&#x5374;&#x56CA;&#x62EC;&#x4E86;&#x524D;&#x8005;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x5305;&#x62EC;&#x6240;&#x6709;&#x503C;&#x65B9;&#x6CD5;&#x548C;&#x6240;&#x6709;&#x6307;&#x9488;&#x65B9;&#x6CD5;&#x3002;&#x4E25;&#x683C;&#x6765;&#x8BB2;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x6837;&#x7684;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x4E0A;&#x53EA;&#x80FD;&#x8C03;&#x7528;&#x5230;&#x5B83;&#x7684;&#x503C;&#x65B9;&#x6CD5;&#x3002;&#x4F46;&#x662F;&#xFF0C;Go &#x8BED;&#x8A00;&#x4F1A;&#x9002;&#x65F6;&#x5730;&#x4E3A;&#x6211;&#x4EEC;&#x8FDB;&#x884C;&#x81EA;&#x52A8;&#x5730;&#x8F6C;&#x8BD1;&#xFF0C;&#x4F7F;&#x5F97;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x6837;&#x7684;&#x503C;&#x4E0A;&#x4E5F;&#x80FD;&#x8C03;&#x7528;&#x5230;&#x5B83;&#x7684;&#x6307;&#x9488;&#x65B9;&#x6CD5;&#x3002;&#x8F6C;&#x8BD1;&#x8FC7;&#x7A0B;&#x5C31;&#x662F;&#x5148;&#x53D6;&#x8BE5;&#x503C;&#x7684;&#x6307;&#x9488;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x8BE5;&#x6307;&#x9488;&#x4E0A;&#x8C03;&#x7528;&#x6307;&#x9488;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x7EFC;&#x4E0A;&#xFF0C;&#x672C;&#x7BC7;&#x4E0D;&#x4EC5;&#x4ECB;&#x7ECD;&#x4E86;for&#x5FAA;&#x73AF;&#x7684;&#x8FED;&#x4EE3;&#x53D8;&#x91CF;&#xFF0C;&#x8FD8;&#x6709;&#x6E29;&#x6545;&#x4E86;&#x6307;&#x9488;&#x65B9;&#x6CD5;&#x548C;&#x503C;&#x65B9;&#x6CD5;&#x3002;&#x5B66;&#x800C;&#x65F6;&#x4E60;&#x4E4B;&#x4E0D;&#x4EA6;&#x8BF4;&#x4E4E;&#xFF01;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="qiang-zhi-lei-xing-zhuan-huan.html" class="navigation navigation-prev " aria-label="Previous page: 强制类型转换">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="qie-pian-chang-du.html" class="navigation navigation-next " aria-label="Next page: 切片长度">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"for循环之迭代变量","level":"1.3.2","depth":2,"next":{"title":"切片长度","level":"1.3.3","depth":2,"path":"golang/qie-pian-chang-du.md","ref":"golang/qie-pian-chang-du.md","articles":[]},"previous":{"title":"强制类型转换","level":"1.3.1","depth":2,"path":"golang/qiang-zhi-lei-xing-zhuan-huan.md","ref":"golang/qiang-zhi-lei-xing-zhuan-huan.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"golang/for-xun-huan-zhi-die-dai-bian-liang.md","mtime":"2020-01-28T13:51:21.145Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-28T13:51:29.007Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
